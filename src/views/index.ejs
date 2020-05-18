@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('partials/head.ejs') %>
+<!-- HEADER DESDE ACA -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
+    <div class="container"><a class="navbar-brand">Praesidium</a>
+        <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
+                class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="http://localhost:3000/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/products/carrito">Carrito</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="/users/login" class="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">login</a> 
+                <a href="/users/register" class="btn btn-info my-2 my-sm-0 text-uppercase">sign
+                up</a>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- CAMBIAR DESDE ACA -->
+
+
+    
+    <body>
+       
+        <div class="container-fluid gtco-banner-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1> Una compañia dispuesta a <span>cuidar</span> a personas </h1>
+                        <p> La aseguradora más confiable con la <strong> cobertura de seguro ideal  </strong> para vos. </p>
+                        <a href="#">Sobre Nosotros<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                    <div class="col-md-6">
+                        <div class="card"><img class="card-img-top img-fluid" src="images/banner-img.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid gtco-features" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2> Busca entre nuestros servicios<br/>
+                           que tenemos para ofrecerte </h2>
+                        <p> Nunc sodales lobortis arcu, sit amet venenatis erat placerat a. Donec lacinia magna nulla, cursus
+                            impediet augue egestas id. Suspendisse dolor lectus, pellentesque quis tincidunt ac, dictum id
+                            neque. </p>
+                       </div>
+                    <div class="col-lg-8">
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="card text-center">
+                                    <div class="oval"><img class="card-img-top" href="/products/vida"src="images/heart.png" alt=""></div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Vida</h3>
+                                        <p class="card-text"> <button type="submit" class="btn btn-primary bloques"
+                                            onclick="location='/products/vida'">Visitar</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-center">
+                                    <div class="oval"><img class="card-img-top"href="/products/incendios" src="images/fire.png" alt=""></div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Incendios</h3>
+                                        <p class="card-text"> <button type="submit" class="btn btn-primary bloques"
+                                            onclick="location='/products/incendios'">Visitar</button></p>
+                                    </div>
+                                </div>
+                                <div class="card text-center">
+                                    <div class="oval"><img class="card-img-top" href="/products/robo-perdida" src="images/user.png" alt=""></div>
+                                    <div class="card-body">
+                                        <h3 href="/products/vida" class="card-title">Robo-perdida</h3>
+                                        <p class="card-text"> <button type="submit" class="btn btn-primary"
+                                            onclick="location='/products/Robo-perdida'">Visitar</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+       
+      
+        
+       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        
+       
+        </body>
+
+<!-- HASTA ACA -->
+<%- include('partials/footer') %>
+</body>
+</html>
